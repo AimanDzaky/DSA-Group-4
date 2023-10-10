@@ -164,7 +164,7 @@ int main(){
 
 		if(inputTemp == "\\end") break;
 		if(inputTemp == "\\help"){
-			cout << "HELP ==================\n";
+			cout << "-HELP-\n";
 			cout << "- We handle next-to multiplication (ex: 23sin(30) == 23*sin(30))\n";
 			cout << "- We handle capital & spaces between operands (ex: SiN20 +sIn(20) is allowed)\n";
 			cout << "- Basic operation ( * / + - ^ )\n";
@@ -187,7 +187,7 @@ int main(){
 		cout << "= " << res << endl << endl;
 	}
 
-    cout << "\n============= Calculator History =============\n";
+    cout << "\n====== Calculator History =====\n";
 
     // User guide (Option 1-4)
     cout<<"1) Display history list"<<endl;
