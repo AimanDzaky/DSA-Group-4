@@ -111,3 +111,13 @@ double solveRecursion(mathObject* arr, int leftIndex, int rightIndex){
 			return solveRecursion(arr, leftIndex+1, rightIndex-1);
 	}
 }
+
+double calculatorMachine(string input){
+    //CLEAN INPUT (remove spaces and Lowercase)
+    for(int i = 0; i < input.length(); i++){
+		if(input[i] == ' '){
+			input.erase(i,1);
+			i--;
+		}
+		input[i] = tolower(input[i]);
+	}
