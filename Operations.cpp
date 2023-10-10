@@ -4,14 +4,14 @@
 class Operations
 {
 	public:
-		double ToRad(double Degrees); //this function converts the degree input into radians
-		double Sine(double Radians); //this function does sine operations
-		double Cosine(double Radians); //this function does cosine operations
-		double Tangent(double Radians); //this function does tangent operations
-		double SquareRoot(double Number); //this function does square root operations
-		double Exponent(double Number, double Power); //this function does exponent operations
-		double Logarithm(double Number); //this function does logarithmic operations
-		double NaturalLog(double Number); //this function does natural logarithmic operations
+		double ToRad(double Degrees); 			//converts the degree input into radians
+		double Sine(double Radians); 			// does sine operations
+		double Cosine(double Radians); 			//does cosine operations
+		double Tangent(double Radians); 		//does tangent operations
+		double SquareRoot(double Number); 		//does square root operations
+		double Exponent(double Number, double Power); 	//does exponent operations
+		double Logarithm(double Number); 		//does logarithmic operations
+		double NaturalLog(double Number); 		//does natural logarithmic operations
 		
 	private:
 		double degree;
