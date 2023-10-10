@@ -37,7 +37,7 @@ class mathObject{
 
 double solveRecursion(mathObject* arr, int leftIndex, int rightIndex){
 	
-	//SELECT THE OPERATION BY LEAST PRIORITY
+	//Select the operation by least priority
 	int minPriIndex = 0;
 	int minPri = 99999;
 	for(int z = leftIndex; z <= rightIndex; z++){
