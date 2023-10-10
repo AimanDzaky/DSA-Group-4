@@ -113,7 +113,7 @@ double solveRecursion(mathObject* arr, int leftIndex, int rightIndex){
 }
 
 double calculatorMachine(string input){
-    //CLEAN INPUT (remove spaces and Lowercase)
+    //CLEAN INPUT (remove spaces and lowercase)
     for(int i = 0; i < input.length(); i++){
 		if(input[i] == ' '){
 			input.erase(i,1);
@@ -125,7 +125,7 @@ double calculatorMachine(string input){
 //INITIALIZE mathObject ARRAY
 	mathObject arr[input.length()];
 
-//COVERT string INPUT TO mathObject ARRAY
+//COVERTING string INPUT TO mathObject ARRAY
 
 	// > BRACKET TELEPORT SYSTEM
 	int bracketDepth = 0;
@@ -173,7 +173,7 @@ double calculatorMachine(string input){
 
 		}else if('0' <= cur && cur <= '9'){
 			double frontTemp = 0; //infront of coma
-			double backTemp = 0; // back of coma
+			double backTemp = 0; //back of coma
 			double behindComa = 0;
 			while(true){
 
@@ -234,7 +234,7 @@ double calculatorMachine(string input){
 	}
 
 	
-	//INVOKE THE SOLVE RECURSION ON THE PARSED INPUT!!!!!
+	//INVOKE THE SOLVE RECURSION ON THE PARSED INPUT
 	double toReturn = solveRecursion(arr, 0, t-1);
 	return toReturn;
 }
